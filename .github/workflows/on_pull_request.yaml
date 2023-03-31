@@ -7,8 +7,7 @@ on:
     # types: [opened, reopened]
 
 jobs:
-  build:
-    name: test with pytest
+  test-with-pytest:
     runs-on: ubuntu-latest
     strategy:
       matrix:
