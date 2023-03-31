@@ -6,6 +6,7 @@ on:
 
 jobs:
   build:
+    name: test with pytest
     runs-on: ubuntu-latest
     strategy:
       matrix:
