@@ -33,5 +33,5 @@ class NaverNewsScraper(BaseScraper):
         """
         Return a list of article urls
         """
-        articles = search_html.select("div.group_news > ul.list_news div.news_area a.news_tit")
+        articles = search_html.select("div.info_group > a.info:not(.press)")
         return [article["href"] for article in articles]
