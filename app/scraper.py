@@ -2,7 +2,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import requests
 from typing import List, Final, Dict
-from snitch.scraped_data import NaverNewsArticle
+from app.scraped_data import NaverNewsArticle
 
 
 HEADERS: Final[str] = {
