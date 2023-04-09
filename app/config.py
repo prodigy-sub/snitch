@@ -20,7 +20,6 @@ def get_secret(
             return default_value
         raise EnvironmentError(f"Set the {key} environment variable.")
 
-
-if __name__ == "__main__":
-    world = get_secret("hello")
-    print(world)
+MONGO_DB_NAME = get_secret("MONGO_DB_NAME")
+MONGO_DB_USERNAME = get_secret("MONGO_DB_USERNAME")
+MONGO_DB_PASSWORD = get_secret("MONGO_DB_PASSWORD")
