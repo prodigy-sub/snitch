@@ -3,7 +3,7 @@ from datetime import datetime
 import pytest
 from bs4 import BeautifulSoup
 
-from snitch.scraper import BaseScraper, NaverNewsScraper
+from app.scraper import BaseScraper, NaverNewsScraper
 
 
 def test_url2soup():
